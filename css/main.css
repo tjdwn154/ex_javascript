@@ -1,0 +1,236 @@
+*{
+    margin: 0; padding: 0;
+    font-family: '맑은 고딕', 'MalgunGothic', Gothic, sans-serif;
+}
+
+a{text-decoration: none;}
+li{list-style: none;}
+
+/* float지정 */
+.pull-left{float: left;}
+.pull-right{float: right;}
+
+/* 페이지구성 */
+body{
+    width: 960px;
+    margin: 0 auto; /* 가운데 */
+    background: #F6F6F6;
+}
+#page-wrap{
+    background: white;
+    margin: 40px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(192, 192, 192, 0.3);
+}
+
+/* header의 글꼴과 색상 지정 */
+#main-header{
+    padding: 40px 50px;
+    position: relative;
+}
+#main-header > img {
+    border: 0;
+    float: left;
+}
+.master-title{
+    font-size: 30px;
+    color: #181818;
+}
+.master-description{
+    font-size: 15px;
+    color: #383838;
+}
+
+/* member 위치 스타일 */
+#member {
+    position: absolute;
+    right: 0; top: 10px;
+}
+#member > ul{overflow: hidden;}
+#member > ul > li{float: left;}
+#member > ul > li > a{
+    display: inline-block;
+    padding: 2px 10px;
+    color: #000000;
+}
+#member > ul > li > a:hover{
+    color: darkolivegreen;
+    font-style: italic;
+}
+#login{
+    display: inline-block;
+    padding: 2px 10px;
+}
+#login:hover{
+    color: darkolivegreen;
+    font-style: italic;
+    cursor: pointer;
+}
+
+/* nav 풀다운 메뉴 구성 */
+#main-navigation{
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+/* 가장 바깥쪽 li 태그 */
+.menu-item{
+    float: left; /* 가로정렬 */
+    position: relative;
+}
+.menu-item:hover{
+    background: #585858;
+    color: white;
+}
+
+/* 주메뉴 */
+.menu-title{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+/* 하위 메뉴 */
+.sub-menu{
+    display: none;
+    position: absolute;
+    top: 40px; left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
+    z-index: 1000;
+    text-align: center;
+}
+
+/* 하위 메뉴 내용 */
+.sub-menu-item > a{
+    display: block;
+    padding: 5px 10px;
+    color: black;
+}
+.sub-menu-item > a:hover{
+    background: #636262;
+    color: white;
+}
+
+/* 하위 메뉴 보이기 */
+.menu-item:hover ul.sub-menu{
+    display: block;
+}
+
+/* 검색 양식 추가(nav 내부 검색) */
+.search-bar{
+    height: 26px;
+    padding: 7px;
+}
+.input-search{
+    display: block;
+    float: left;
+    background: white;
+    border: 1px solid #cccccc;
+    border-radius: 15px 0 0 15px;
+    width: 120px; height: 26px;
+    padding: 0 0 0 10px;
+    font-size: 12px;
+    color: #555555;
+}
+.input-search:focus{
+    border-color: rgba(82, 168, 236, 0.8);
+}
+.input-submit{
+    display: block;
+    float: left;
+    width: 50px; height: 26px;
+    border-radius: 0 15px 15px 0;
+    border: 1px solid #cccccc;
+    margin-left: -1px;
+}
+
+/* 본문 content, one true 레이아웃 사용 */
+#content{
+    overflow: hidden;
+}
+#main-section{
+    float: left;
+    width: 710px;
+}
+#main-aside{
+    float: right;
+    width: 190px;
+    padding-left: 10px;
+    border: 1px solid #c8c8c8;
+}
+article{
+    padding: 0 10px 20px 10px;
+    border-bottom: 1px solid #c8c8c8;
+}
+article:last-child{
+    border: none;
+}
+.article-header{
+    padding: 20px 0;
+}
+.article-title{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.article-source{
+    font-size: 12px;
+}
+.article-body{
+    font-size: 14px;
+}
+
+/* 사이드 메뉴 테두리 */
+#main-aside > div{
+    height: 300px;
+}
+
+/* 사이드메뉴(aside) */
+.aside-list{
+    padding: 10px 0 30px 0;
+}
+.aside-list > h3{
+    font-size: 15px;
+}
+.aside-list li a{
+    margin-left: 8px;
+    font-size: 13px;
+    color: #6c6c6c;
+}
+
+/* footer */
+footer{
+    border-top: 1px solid #c8c8c8;
+    padding-top: 10px;
+    text-align: center;
+}
+footer > a{
+    color: rgb(112, 112, 112);
+}
+
+/* top */
+#top{
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    cursor: pointer;
+}
+#top > img{
+    width: 32px; height: 36px;
+}
+
+/* img 크기 */
+td > img{
+    width: 50px; height: 50px;
+}
+td{
+    text-align: center;
+    font-size: smaller;
+    padding-top: 0 5px;
+}
