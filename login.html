@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>로그인</title>
         <link rel="stylesheet" href="css/login.css"/>
+        <script defer src="js/login_in.js"></script>
     </head>
     <body>
         <div id="page-wrap">
@@ -19,17 +20,17 @@
                     <table cellpadding="5">
                         <tr>
                             <td>
-                                <input id="id" type="text" name="id" size="30" placeholder="아이디"/>
+                                <input id="memid" type="text" name="memid" size="30" placeholder="아이디"/>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input id="pw" type="text" name="pw" size="30" placeholder="비밀번호"/>
+                                <input id="mempwd" type="text" name="mempwd" size="30" placeholder="비밀번호"/>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <a href="">로그인</a>
+                                <button type="button" id="loginbtn" onclick="logincheck()">로그인</button>
                             </td>
                         </tr>
                     </table>
